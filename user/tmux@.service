@@ -1,0 +1,10 @@
+[Service]
+ExecStart=/usr/bin/tmux -D -L %I
+
+# If you kill a tmux server (even with tmux' kill-server command),
+# the execution continues before it is actually stopped.
+#
+ExecStopPost=/usr/bin/sleep 0.1s
+
+[Install]
+WantedBy=default.target

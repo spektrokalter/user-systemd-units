@@ -1,0 +1,2 @@
+[Service]
+ExecStart=/home/kalter/.local/bin/dwm
