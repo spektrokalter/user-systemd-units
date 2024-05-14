@@ -1,0 +1,4 @@
+[Service]
+ExecStart=/usr/bin/ssh -N -D 49500 eu-north
+Restart=on-failure
+RestartSec=5s
