@@ -1,5 +1,5 @@
 [Service]
-Environment=SOCKS_SERVER=localhost:1080
+Environment=SOCKS_SERVER=localhost:49500
 ExecStart=/usr/bin/chromium --user-data-dir=%h/.config/chromium-over-proxy
 
 Restart=always
